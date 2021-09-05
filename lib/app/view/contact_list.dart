@@ -5,7 +5,7 @@ class ContactList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista  contatos'),
+        title: Text('Lista contatos'),
       ),
       body: ListView(),
     );
