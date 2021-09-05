@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-class  extends StatelessWidget {
-  
-
+class ContactForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(title: Text('CADASTRO DE CONTATO'),),
     );
   }
 }

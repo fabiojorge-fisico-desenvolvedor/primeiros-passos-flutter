@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        'aa': (context) => ContactList(),
-        '/': (context) => ContactForm(),
+        '/': (context) => ContactList(),
+        'contact-form': (context) => ContactForm()
       },
     );
   }
