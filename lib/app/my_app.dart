@@ -1,9 +1,6 @@
-import 'package:agenda_crud/app/view/my_home_page.dart';
+import 'package:agenda_crud/app/view/contact_list.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter/cupertino.dart';
-
-
-
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -23,7 +20,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'ANDROID Page'),
+      home: ContactList(),
     );
   }
 }
