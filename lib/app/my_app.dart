@@ -1,3 +1,4 @@
+import 'package:agenda_crud/app/view/contact_form.dart'; // se não tiver esses pacotes importados aqui de suas pastas, não vai dar certo.
 import 'package:agenda_crud/app/view/contact_list.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter/cupertino.dart';
@@ -11,7 +12,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ContactList(),
+      routes: {
+        'aa': (context) => ContactList(),
+        '/': (context) => ContactForm(),
+      },
     );
   }
 }
