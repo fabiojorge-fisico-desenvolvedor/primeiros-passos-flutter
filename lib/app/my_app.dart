@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 //import 'package:flutter/cupertino.dart';
 
 class MyApp extends StatelessWidget {
+  static const HOME = '/';
+  static const CONTACT_FORM = 'contact-form';
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -13,8 +15,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (context) => ContactList(),
-        'contact-form': (context) => ContactForm()
+        HOME: (context) => ContactList(),
+        CONTACT_FORM: (context) => ContactForm()
       },
     );
   }
