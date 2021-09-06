@@ -40,7 +40,7 @@ class ContactList extends StatelessWidget {
           itemCount: lista.length,
           itemBuilder: (context, i) {
             var contato = lista[i];
-            return Text(contato['nome']!);//<==== olha se não colocar essa exclamação heim
+            return Text(contato['nome']!); //inserindo contato
           },
         ));
   }
