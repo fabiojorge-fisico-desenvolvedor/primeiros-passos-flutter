@@ -27,7 +27,7 @@ class ContactList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Lista de comandos'),
+          title: Text('Lista de contatos'),
           actions: [
             IconButton(
                 onPressed: () {
@@ -40,7 +40,14 @@ class ContactList extends StatelessWidget {
           itemCount: lista.length,
           itemBuilder: (context, i) {
             var contato = lista[i];
-            return Text(contato['nome']!); //inserindo contato
+            var avatar = CircleAvatar(
+              backgroundImage: NetworkImage(contato['avatar']!),
+            );
+            return ListTile(
+              leading: avatar,
+              title: Text(contato['nome']!),
+              subtitle: Text(contato['telefone']!),
+            );
           },
         ));
   }
